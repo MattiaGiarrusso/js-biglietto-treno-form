@@ -15,6 +15,8 @@ const formatter = Intl.NumberFormat('en-DE', {
     currency: 'EUR',
 });
 
+
+
 // Creare una funzione legata al button 'genera biglietto'
 const generateButton = document.querySelector('#generate-button');
 generateButton.addEventListener('click', function () {
@@ -55,8 +57,11 @@ generateButton.addEventListener('click', function () {
 // creare un button per la pulizia del form
 const clearButton = document.querySelector('#clear-button');
 clearButton.addEventListener('click', function() {
+    document.querySelector('#user-name').value = '';
     document.querySelector('#user-km').value = '';
     document.querySelector('#user-age').value = '';
+    document.querySelector('#user-message').value = '';
+
 
     const userMessageDiv = document.querySelector('.user-message');
     userMessageDiv.innerHTML = '';

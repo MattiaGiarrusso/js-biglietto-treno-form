@@ -8,28 +8,35 @@
 </head>
 <body class="bg-danger d-flex justify-content-center pt-5">
 
-    <div class="form-container bg-light w-50 p-3 rounded">
+    <div class="form-container container-md bg-light w-50 p-3 rounded">
+
+        <div class="row text-center pb-2">
+            <h2>Acquista il tuo biglietto online</h2>
+        </div>
         
         <div class="input-container pb-2">
-            <label>Nome e cognome</label>
-            <input id="user-name" type="text">
+            <label><strong>Nome e Cognome</strong></label>
+            <input id="user-name" class="form-control" type="text">
+        </div>
+        
+        <div class="input-container pb-2">            
+            <label><strong>Chilometri da percorrere</strong></label>
+            <div class="input-group">
+                <input id="user-km"  type="number" class="form-control" type="number" min="0" value="1" oninput="validity.valid||(value='');">
+                <span class="input-group-text">km</span>
+            </div>
         </div>
 
         <div class="input-container pb-2">
-            <label>Kilometri da percorrere</label>
-            <input id="user-km" type="text">
+            <label><strong>Età del cliente</strong></label>
+            <input id="user-age" class="form-control" type="text">
         </div>
 
-        <div class="input-container pb-2">
-            <label>Età del cliente</label>
-            <input id="user-age" type="text">
-        </div>
-
-        <button id="generate-button" class="btn btn-danger pb-2">Genera biglietto</button>
-        <button id="clear-button" class="btn btn-danger pb-2">Reset</button>
+        <button id="generate-button" class="btn btn-danger py-2">Genera biglietto</button>
+        <button id="clear-button" class="btn btn-danger py-2">Reset</button>
         
         <!-- Contenitore risultato del biglietto-->
-        <div id="user-message">
+        <div id="user-message" class="py-2">
     
         </div>
     </div>
