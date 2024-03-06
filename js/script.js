@@ -46,7 +46,7 @@ generateButton.addEventListener('click', function () {
 
 
     // stampare il messaggio d'acquisto nel div html 
-    const userMessageDiv = document.querySelector('.user-message');
+    const userMessageDiv = document.querySelector('#user-message');
     userMessageDiv.innerHTML = `${userMessage} ${formatter.format(priceTicketFinal)}`;
     userMessageDiv.classList.add('active');
 });
