@@ -63,7 +63,7 @@ clearButton.addEventListener('click', function() {
     document.querySelector('#user-message').value = '';
 
 
-    const userMessageDiv = document.querySelector('.user-message');
+    const userMessageDiv = document.querySelector('#user-message');
     userMessageDiv.innerHTML = '';
     userMessageDiv.classList.remove('active');
 });
